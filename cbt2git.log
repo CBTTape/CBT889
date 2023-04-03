@@ -1,0 +1,14 @@
+2023-04-03 03:28:52.808394 - Initialized conversion of CBT889
+2023-04-03 03:29:06.986423 - Received CBT.V504.FILE889.PDS from FILE889.XMI 
+2023-04-03 03:29:06.990535 - Found $$$#DATE.txt (text/plain) in CBT.V504.FILE889.PDS, moved to PDS/$$$#DATE
+2023-04-03 03:29:06.991678 - Found @FILE889.txt (text/plain) in CBT.V504.FILE889.PDS, moved to PDS/@FILE889
+2023-04-03 03:29:06.991689 - Found HERC308.zip (application/zip), trying to unzip
+2023-04-03 03:29:06.992789 - Found HERC308.zip (application/zip), extracting to CBT889/HERC308
+2023-04-03 03:29:07.128148 - Found H312W32.zip (application/zip), trying to unzip
+2023-04-03 03:29:07.129044 - Found H312W32.zip (application/zip), extracting to CBT889/H312W32
+2023-04-03 03:29:07.169642 - Found H312W64.zip (application/zip), trying to unzip
+2023-04-03 03:29:07.170486 - Found H312W64.zip (application/zip), extracting to CBT889/H312W64
+2023-04-03 03:29:07.218249 - Found H441ZIP.zip (application/zip), trying to unzip
+2023-04-03 03:29:07.218686 - Found H441ZIP.zip (application/zip), extracting to CBT889/H441ZIP
+2023-04-03 03:29:07.303992 - Found PROFCTC.txt (text/plain) in CBT.V504.FILE889.PDS, moved to PDS/PROFCTC
+2023-04-03 03:29:07.305189 - Found PROFLCS.txt (text/plain) in CBT.V504.FILE889.PDS, moved to PDS/PROFLCS
