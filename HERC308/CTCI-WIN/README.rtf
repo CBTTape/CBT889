@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fprq1\fcharset0 Lucida Console;}{\f1\fmodern\fprq1\fcharset0 Lucida Console;}{\f2\fmodern\fprq1\fcharset0 Courier New;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\qc\f0\fs20\par
+Software Development Laboratories\par
+\par
+\i\fs22 TunTap for Windows\par
+\i0\par
+\b\fs36 CTCI-WIN\fs20\par
+\b0\i\fs22\par
+\b\i0\fs20 Version 3.3.0\par
+\b0\par
+\i\par
+\i0 _____________________________________________________________________________________\par
+\par
+\b\par
+Installation\par
+\f1\par
+\pard\b0\par
+To install CTCI-WIN, simply run the installation program and follow the instructions. Same with uninstalling.\par
+\par
+Please note that CTCI-WIN also requires the \ul\b FishLib DLL\ulnone\b0  product to also be installed on your system too before it will function properly. The CTCI-WIN installer comes already pre-packaged with the proper FishLib installer embedded within it and should automatically install FishLib for you during the normal CTCI-WIN installation process. Thus under normal circumstances you should not have to worry about it. Just install CTCI-WIN like normal and you're done. Both CTCI-WIN \i and\i0  FishLib should both be installed at the proper level when you're done.\par
+\par
+Additionally, CTCI-WIN \i also\i0  requires a third party product called \ul\b WinPcap\ulnone  \b0 - the Windows Packet Capture Library (\cf1\ul{\field{\*\fldinst{HYPERLINK "http://www.winpcap.org"}}{\fldrslt{\ul\cf1 http://www.winpcap.org}}}\cf0\ulnone\f1\fs20 ) - to also be installed on your system as well. Again, just like FishLib, the installer comes already pre-packaged with the proper WinPcap installer embedded within it and \i should\i0  automatically invoke it for you as part of the normal CTCI-WIN installation process if WinPcap is not already installed. Just install CTCI-WIN like normal and follow the instructions should the WinPcap installer appear.\par
+\par
+Also note that \i uninstalling\i0  CTCI-WIN will \i not\i0  also uninstall FishLib nor WinPcap. This is because other products which may still be installed may depend on them to function properly and uninstalling either would therefore break them. If you wish to also uninstall FishLib and/or WinPcap as part of your CTCI-WIN uninstallation process then you will have to do that manually yourself via the Add/Remove Programs control panel applet.\i\par
+\i0\par
+\pard\qc\i\par
+\i0\f0 _____________________________________________________________________________________\par
+\par
+\par
+\b What are these extra 'U' versions for?\b0\par
+\pard\par
+\par
+\pard\fi-360\li360\b Q\b0 : Why are there extra copies ending with 'U'? Do I need them in order to use CTCI-WIN?\par
+\par
+\b A\b0 : No, you don't need them. The 'U' variants are UNICODE versions and are needed only if you use any of the UNICODE versions of my products.\par
+\pard\li360\par
+At the moment the UNICODE versions are identical to the non-UNICODE versions (except that they're UNICODE of course), but in the future that may not always be true. In the future, the UNICODE versions \i might\i0  be different, having been customized to some other language other than English (which is basically what UNICODE is for: supporting other languages).\par
+\par
+For the moment however, as English is the only language I currently support, the UNICODE versions are, for all intents and purposes, identical to the non-UNICODE versions, and provide absolutely no advantage whatsoever over the non-UNICODE versions.\par
+\pard\qc\i\par
+\i0 _____________________________________________________________________________________\par
+\par
+\par
+\b Testing\par
+\b0\par
+\pard\f1\par
+The \ul\b TT32Test\ulnone\b0  program is included as part of the installation package and is designed to simulate a running Hercules instance (in a manner of speaking), thus allowing you to verify that the CTCI-WIN package is installed correctly and functioning properly.\par
+\par
+After installing CTCI-WIN, start the TT32Test program and, after verifying that none of the displayed messages are ERROR or WARNING messages (they should be obvious!), select the 'Start' command from the 'Test' menu and fill in the dialog box with the values you plan to use for Hercules and click the 'OK' button to start the test.\par
+\par
+While the test is running, open a Command-Prompt window at any workstation on your local network and 'ping' the IP address of your "Hercules" system. You should get a response. If you don't then something is wrong and needs to be resolved before continuing.\par
+\par
+Be sure to also select "Ping someone" from TT32Test's 'Test' menu to simulate pinging \i from\i0  your Hercules guest o/s too. TT32Test should get a response for that as well.\par
+\par
+If the pings from \i both directions \i0 (pings \i from\i0  TT32Test \i to\i0  somewhere else, and pings \i from\i0  somewhere else \i to\i0  TT32Test) works okay, then CTCI-WIN is correctly installed and functioning properly. If either of the pings fails to get a response however, then something is wrong and needs to be resolved before you can use CTCI-WIN with Hercules. (It might be a simple routing issue or perhaps a network adapter configuration setting).\par
+\par
+If everything looks okay however but when you IPL your guest o/s under Hercules your guest's networking still doesn't work right, then it's not the fault of CTCI-WIN. When such a situation occurs it usually means either your guest o/s's networking configuration or your Hercules configuration itself (or both) are not setup properly. Ask the hercules-390 support forum for help.\par
+\pard\qc\i\f0\par
+\i0 _____________________________________________________________________________________\par
+\b\par
+\par
+Building / Debugging CTCI-WIN\par
+\pard\b0\f1\par
+\par
+Please refer to the "\b Building FishLib\b0 " section of the FishLib product for important information regarding prerequsite product installation before attempting to build CTCI-WIN from source. CTCI-WIN depends on the same prerequsites as FishLib. Once FishLib and its prerequsites are installed, then building CTCI-WIN from source should be as simple as selecting a Rebuild of all platform configurations from the "\ul Batch Build\ulnone " dialog.\par
+\par
+Note that if you wish to build/debug just a specific Solution configuration using Visual Studio's integrated debugger you should ensure that your CTCI-WIN project's Output directory comes \i before \i0 (i.e. \i first, \i0 or \i ahead \i0 of) the CTCI-WIN product's normal installation directory in Windows's search PATH. Otherwise when you begin your Debug session from within Developer Studio (by clicking the "Start Debugging" toolbar button), Windows will end up loading and executing the \i installed\i0  version of CTCI-WIN instead of the just-built version you actually wanted to debug! (Oops!)\par
+\i\f0\par
+\pard\qc\i0 _____________________________________________________________________________________\par
+\par
+\b\par
+VERSION 3.3.0\par
+\par
+\pard\fi-360\li720\b0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Support for Win98/ME (Win9x) has been dropped.\par
+\pard\fi-180\li180\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 New project build system: NullSoft (NSIS) installation program.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Project converted to Visual C++ 2008 SP1.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 32-bit binaries now include '32' in their name.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Support also pinging by name instead of just IP address.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Verbose or non-verbose logging Menu Option (default == non-verbose).\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Previously used values are now remembered across test runs.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Fix TunTap32 CTCI send bug causing spurious ARP's when destination IP not in the same subnet (special thanks to Joseph M DeAngelo for reporting this bug!)\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Modified FishPack to always retry its WinPCap startup/initialization attempt again each time should it happen to fail the first time.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Added ability to modify FishPack's WinPCap startup/initialization timeout setting via use of a new DWORD registry entry value called "\f2 FWPCUtilTimeout"\f1  (Fish WinPCap Utility Timeout):\f0\par
+\pard\fi-720\li720\par
+\pard\tx1440\tab\f2 HKCU\\Software\\Software Development Laboratories\\FishPack\\Settings\par
+\pard\f0\par
+\pard\fi-720\li720\tab If the entry does not exist the timeout value defaults to 30 seconds. Refer to FAQ question 25 for more information.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Updated TT32Test's error message text with mention of new registry entry timeout value for the case of when it appears that WinPCap isn't working/installed correctly.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 FishLibAfxTrace now used in place of MFC's AfxTrace.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri360 TT32Test now also reports the Connection Name along with the existing Adapter Name and Adapter Description information.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri360 Because of the way WinPCap works (all packets written to the virtual interface are also received on the virtual interface as well), all packets read with a source MAC address matching that of the virtual interface are now ignored (but counted) instead of being passed back to the caller.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 The size of the 'TT32STATS' statistics counter structure has been increased to accomodate the following new counters:\par
+\pard\li1170\tx4320\par
+\pard\li1170\tx4500 n64OwnPacketsIgnored\tab Total #of packets read with our source MAC\par
+n64ZeroMACPacketsRead\tab Total #of packets read with dest MAC all zeros\par
+n64ZeroMACPacketsWritten\tab Total #of packets written with dest MAC all zeros\par
+\par
+\pard\li720\tx4500 Please note all of the above counters are subsets of existing counters. For example: the 'n64OwnPacketsIgnored' count is included in the 'n64IgnoredPackets' count as well.\par
+\pard\qc\i\par
+\par
+\i0 _____________________________________________________________________________________\par
+\par
+\b\par
+VERSION 3.2.1\par
+\par
+\pard\fi-180\li180\b0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Fixed Visual Studio 2005 SP1 manifest issue (grumble).\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Fixed bug in FWPCUtil causing it to fail on non-WinXP systems.\par
+\pard\qc\i\par
+\par
+\i0 _____________________________________________________________________________________\par
+\par
+\b\par
+VERSION 3.2.0\par
+\par
+\pard\fi-180\li180\b0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 New project build system: NullSoft (NSIS) installation program.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Implement better fix for VS2005 SP1 issue now that Microsoft is now thankfully redistributing the SP1 version of vcredist.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 CTCI-W32 was built using the latest version of Microsoft's Visual C++ product (VS2005) and thus now requires the latest MSVC support DLLs be installed before it will work properly. The latest DLLs are available directly from Microsoft and/or via the softdevlabs.com web site. The DLLs in question are: MSVCRT.DLL, MSVCR80.DLL and MFC80.DLL.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 CTCI-W32 now works with version 4.0 of WinPCap. WinPCap version 4.0 fully supports 64-bit Windows operating systems (e.g. Windows XP Professional x64 Edition, etc).\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Support for using CTCI-W32 with 64-bit applications running on 64-bit Windows operating systems requires the help of a new 32-bit support utility called "FWPCUtil" included in the distribution. It is FWPCUtil which is responsible for talking to the 32-bit version of the WinPCap "packet.dll" since WinPCap does not (yet) supply a 64-bit version of their DLL. Note that this new utility is needed even if you only plan to run 32-bit Hercules on your 32 or 64-bit Windows system as CTCI-W32 is designed to be as platform neutral as possible and thus also calls it even when running in 32-bit mode on a 32-bit Windows system.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Added support for specifying driver/dll buffer sizes to TT32Test.\par
+\pard\fi-360\li720\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-360\li720 Added "About" dialog box to TT32Test.\par
+\pard\par
+\par
+\pard\qc _____________________________________________________________________________________\par
+\f1\par
+}
+ 
