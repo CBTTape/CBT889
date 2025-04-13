@@ -1,0 +1,167 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fprq1\fcharset0 Lucida Console;}{\f1\fmodern\fprq1\fcharset0 Lucida Console;}{\f2\fswiss\fcharset0 Arial;}{\f3\fswiss Comic Sans MS;}{\f4\fswiss Arial;}{\f5\fswiss\fcharset0 Verdana;}{\f6\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;\red128\green128\blue128;\red0\green0\blue0;\red0\green128\blue0;\red128\green0\blue128;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\qc\f0\fs20\par
+Software Development Laboratories\par
+\par
+\fs22\par
+\i Handy Dandy Support Functions Library\par
+\i0\fs20\par
+\b\fs36 FishLib DLL\fs20\par
+\par
+Version 2.8.0\par
+\b0\par
+\i\par
+\i0\par
+__________________________________________________________________________________\par
+\par
+\b\par
+Overview / Description\par
+\b0\par
+\pard\par
+Many of the programs I write end up doing the same things all over again as are already being done in yet others programs I've already written.\par
+\par
+Rather than re-invent the wheel each time (and/or copy & paste the same code into each new program I write), I've instead gathered most of the more common functions into one place: this library (dll).\par
+\par
+That way if I need to fix a bug in a particular function and/or add support for new features/functionality to an already existing function or class, I only need to do it in one place and not all over again in each program individually.\par
+\par
+I could have accomplished the same thing by making this set of common functions a static library rather than a DLL, but then if I had to make a change to the library I'd then have to relink all of my programs with the new library and then ship that new version to all my customers.\par
+\par
+With the library being a DLL however, all I have to do is build a new version of the DLL instead and ship that to everyone, WITHOUT having to re-link and re-ship each given product individually.\par
+\par
+This makes for easier maintenance on my part as well as for my customers since all they have to do is download/install the new version of the DLL and instantly \i all\i0  of their SoftDevLabs products are magically updated with the fix and/or new functionality.\par
+\par
+\pard\qc\par
+__________________________________________________________________________________\par
+\par
+\b\par
+Installation\par
+\par
+\pard\b0\par
+To install FishLib, simply run the installation program and follow the instructions. Same goes with uninstalling.\par
+\par
+The supplied *.h, *.lib and *.pdb files are needed only if you plan to use FishLib in your program development. The files are \ul\b\i NOT\ulnone\b0  \i0 needed if you only plan to \i use\i0  FishLib because one of my other products needs it. Only the DLLs themselves are actually needed if you only need to \i use\i0  FishLib.\par
+\par
+\par
+\pard\fi-360\li360\b Q\b0 : Why are there extra copes, each ending with 'D', 'U' and 'UD'? Do I need all of them in order to use FishLib?\par
+\par
+\b A\b0 : No, you don't need all of them if you only plan to \i use\i0  FishLib and not do any program development. The only file you need is the plain 'FishLib32.dll' (and/or possibly the FishLib32U.dll).\par
+\pard\par
+\par
+The two 'D' varieties (FishLib32D and FishLib32UD) are debugging versions used only for program development. The plain version (FishLib32) is the normal production Release version and is the only one you normally need.\par
+\par
+The FishLib32U version is a UNICODE version of the same thing and is needed only if you use any of the UNICODE versions of my products.\par
+\par
+At the moment the UNICODE versions of all my products are identical to the Release mode versions (except that they're UNICODE builds of course), but in the future that may no longer be true. In the future, the UNICODE versions \i might\i0  be different in that it \i may\i0  have been customized to some other language other than English. For now though, since I currently only support the English language, the UNICODE versions are essentially identical to the non-UNICODE versions.\par
+\par
+\pard\qc\par
+__________________________________________________________________________________\par
+\par
+\b\par
+VERSION 2.8.0\par
+\b0\par
+(current)\par
+\b\par
+\pard\b0\par
+\pard{\pntext\f6\'B7\tab}{\*\pn\pnlvlblt\pnf6\pnindent0{\pntxtb\'B7}}\fi-270\li450 New project build system: NullSoft (NSIS) installation program.\par
+{\pntext\f6\'B7\tab}Project converted to Visual C++ 2008 SP1.\par
+{\pntext\f6\'B7\tab}Fix missing dirsep in GetFullPathOnly for network paths. Also ensure that it always ends with a slash as per documentation.\par
+{\pntext\f6\'B7\tab}Fix minor bug in BrowseForDirectory that could occur if neither an initial directory nor default directory is supplied.\par
+{\pntext\f6\'B7\tab}PAUSE() macro: #include <conio.h> for _kbhit() and call _gettch() to discard entered keystroke\par
+{\pntext\f6\'B7\tab}Fixed another bug in "QuoteIfNeeded" function causing strings containing quotes to not be quoted even when they really should be (i.e. if they contained blanks for example)\par
+{\pntext\f6\'B7\tab}Created additional portable byte-swapping macros based on host processor endianess\par
+{\pntext\f6\'B7\tab}Made 'SafeLoadBarState's bar state verification logic into a separate BOOL function called 'VerifyBarState' which anyone (including SafeLoadBarState) can now call/use.\par
+{\pntext\f6\'B7\tab}Created new CFLComboBoxEx class.\par
+{\pntext\f6\'B7\tab}Created new CSaveSelEdit class.\par
+{\pntext\f6\'B7\tab}Added PJ Arends's "tstl.h" TCHAR equivalents of STL string classes header file\par
+{\pntext\f6\'B7\tab}The HexEdit control's popup context menu owner was reset back to itself since the introduction of the HEO_FIXEDSIZE option in the previous 2.7.0 version obviated the need for it to continue to be set to GetParentOwner (which was just a hack anyway).\par
+{\pntext\f6\'B7\tab}New 'CRLF' #define constant _T("\\r\\n")\par
+{\pntext\f6\'B7\tab}New TRACE_IF Release-mode macro calls TRACE if defined condition is true\par
+{\pntext\f6\'B7\tab}New CXBalloonMsg class.\par
+{\pntext\f6\'B7\tab}New CByteArrayEx class.\par
+{\pntext\f6\'B7\tab}New CHtmlHelpApp class.\par
+{\pntext\f6\'B7\tab}New "Coredump Copy Format" and "Actual Displacements" extended context menu commands\par
+{\pntext\f6\'B7\tab}New FormatHexDumpEx and TranslateStringEx functions.\par
+{\pntext\f6\'B7\tab}ZLIB/BZIP2 Compression support moved into FishLib\par
+{\pntext\f6\'B7\tab}Various other minor(?) editorial and technical corrections.\par
+\pard\fi-270\li450\par
+\pard\qc\par
+__________________________________________________________________________________\par
+\par
+\par
+\b\par
+FishLib Development\par
+\par
+\pard\b0\par
+To develop programs using FishLib, simply add a \cf1 #include\cf0  for "\cf2 fishlib.h\cf0 " to your project (and any other desired headers) and rebuild. The FishLib install directory should already have been added to your 'INCLUDE' and 'LIB' environment variables by the installation/setup program. All you should really need to do to use FishLib after installing it is to make sure that both \b $(INCLUDE)\b0  and \b $(LIB)\b0  are \i somewhere\i0  in your Visual Studio directories search lists (usually at the very end).\par
+\par
+There is no documentation for what FishLib functions are available, what each of them does nor how to use any of them (sorry about that!). This is, after all, a library meant mostly for myself. I'm only making the source available in case others might find it useful in their own program development as well. (If you do use it though, I'd really appreciate knowing about it! If I knew that others were actually using FishLib in their own products then I might actually try a bit harder to actually document the darn thing and/or make it a bit more presentable!).\par
+\par
+\pard\qc\par
+__________________________________________________________________________________\par
+\par
+\b\par
+Building FishLib\par
+\pard\b0\par
+\par
+\b\i Note!\b0  The following only needs to be done \ul once\ulnone  in order to setup your build environment in order to build FishLib. Once you do it you shouldn't ever need to do it again. \i0 [*]\par
+\par
+\par
+To successfully build FishLib from source (or really \ul\i ANY\ulnone\i0  SoftDevLabs product), you will first need to gather some needed pieces from other places around the web. My Setup program/project does not do this for you. It only packages my own stuff (and Microsoft's 'vcredist' of course) but not anyone else's stuff, so you'll have to manually acquire the other needed pieces for yourself. (That is to say, you need to manually setup your SoftDevLabs build environment)\par
+\par
+The pieces you'll need are:\par
+\par
+\pard\tx360\tx2160\tab\b Visual C++\b0\tab (Professional Edition, \i not\i0  the Express Edition)\par
+\tab\b WinZip Pro\b0\tab (or gzip and the necessary changes to the build procedure)\par
+\tab\b NSIS\b0\tab (Nullsoft Scriptable Install System)\par
+\tab\b verinfo\b0\tab (a very handy utility by Magnus B\'e4ck)\par
+\tab\b egrep\b0\tab (win32 port of Unix utility)\par
+\tab\b cut\b0\tab (win32 port of Unix utility)\par
+\tab\b sed\b0\tab (win32 port of Unix utility)\par
+\tab\b u2d\b0\tab (win32 port of Unix utility)\par
+\tab\b wc\b0\tab (win32 port of Unix utility)\par
+\pard\par
+\cf3\f1 The Microsoft Visual Studio 2008 Professional Edition (\i not\i0  the Express Edition) is needed because all my products use MFC (Microsoft Foundation Classes) which does not come with the free Express Edition. The Visual C++ Express Edition can be used to build Hercules from source since Hercules does not use MFC, but to build SoftDevLabs products you will need to full Professional Edition in order to get MFC.\par
+\par
+WinZip Professional is not free either. I might have been able to accomplish the same thing using a free gzip/zlib alternative, but haven't bothered to do that yet. I leave doing that as an exercise to the reader should he/she wish to do so.\par
+\par
+All of the other pieces however are free.\par
+\par
+The Nullsoft Scriptable Install System (NSIS) can be downloaded from \cf1\ul http://nsis.sourceforge.net\cf3\ulnone .\par
+\par
+The "verinfo" utility as well as the other utilities (egrep, cut, sed, etc) are free and can be found on the web with with minimal effort. One such place where verinfo can be found is \cf1\ul http://www.jsifaq.com/SF/Tips/Tip.aspx?id=7475\cf3\ulnone .\par
+\par
+The \b cut\b0 , \b sed\b0 , etc. utilities are pure Win32 ports of Unix/Linux tools that are available from either of the "UnxUtils" and/or "GnuWin32" packages available from either \cf1\ul http://unxutils.sourceforge.net/\cf3\ulnone  and/or \cf1\ul http://gnuwin32.sourceforge.net/\cf3\ulnone . Take your pick. Place the utilities into a directory somewhere and add that directory to your Windows \b PATH\b0  so that Windows (and thus the project build system as well!) can then find them.\par
+\par
+For the Setup project (discussed next) you'll also need to add the NSIS directory to your \b PATH\b0  as well (as well as do a few other minor manual installation type things too). Once you've done all that though (and yes it seems like a lot but it's really not), then FishLib -- as well as any of my other products that you may wish to build from source -- should all build just fine.\par
+\pard\qc\cf0\f0\par
+__________________________________________________________________________________\par
+\par
+\pard\cf3\f1\par
+\cf0\f0 After installing NSIS you'll still need to make some more changes before FishLib (or any of my products 'Setup' projects specifically) will build properly. The changes are fairly trivial and only need to be done only once.\par
+\par
+After installing NSIS and manually adding its installation directory to your Windows search PATH (their installation program doesn't do that for you), create an 'NSIS' subdirectory in your user %AppData% directory ("C:\\Documents and Settings\\%username%\\Application Data" on XP, or "C:\\Users\\%username%\\AppData\\Local" on Vista/7), set the 'NSISCONFDIR' environment variable to that value, and then copy all of my "NSIS" project's files to that directory. This directory will be your local NSIS include directory.\par
+\par
+All local modifications to the NSIS product (i.e. custom header files, etc) that you or anyone else create should be placed in this directory. That's not a NSIS requirement, but rather just good common sense made \i into\i0  a requirement by myself.\par
+\par
+In addition to the previously mentioned NSIS header files, you will also need to download and install some NSIS "plug-ins" before you will be able to build any of my SoftDevLabs products. They are:\par
+\par
+\par
+\pard\tx360\tx3600\tab\b MUIOrangeVistaTheme\b0\tab ("Orange Vista" Modern UI Theme)\par
+\tab\b FindMod\b0\tab (SoftDevLabs "NSPlugin" project)\par
+\pard\par
+\par
+MUIOrangeVistaTheme can be obtained from the NSIS web site (\cf1\ul\f1 http://nsis.sourceforge.net\cf0\ulnone\f0 ). Click the "\ul Developer Center\ulnone " link and download the "\ul Orange Vista Modern UI Theme\ulnone " package from the "\ul Graphics and UIs\ulnone " section. The NSPlugin project, which contains my FindMod plugin, should be downloaded from my SoftDevLabs web site.\par
+\par
+Once downloaded, you then need to install them. Installing the "Orange Vista Modern UI Theme" package is easy since it comes with it's own installer. Just run the installer and it will install itself into the NSIS "Contrib" directory (where various miscellaneous user-contributed packages are distributed along with NSIS).\par
+\par
+The FindMod plugin (DLL) needs to be built via my NSPlugin project. The NSPlugin project does not itself need NSIS. Once built, copy the FindMod.dll into NSIS's plugins folder: "C:\\Program Files\\NSIS\\Plugins".\par
+\par
+That's it. That's all you have to do. And you only need to do it \i once\i0  too.[*] From then on, the Setup projects for \i all\i0  of my SoftDevLabs products \i should\i0  build just fine for you.\par
+\par
+\par
+\cf3\f2\fs28\~ "\cf4\b\fs24 Fish\cf3\b0\fs28 "\fs20\~ (\cf5\f3 David B. Trout\cf0\f2 )\f4\fs24  \line\f5\fs20  \~\~\f4\fs24  \f2\fs20\~\f4\fs24  \cf1\ul\f2\fs20 fish@softdevlabs.com\cf0\ulnone\f4\fs24  \par
+\par
+\cf2\i\f2\fs16 "Programming today is a race between\cf0\i0\f4\fs24  \line\cf2\i\f2\fs16 software engineers striving to build bigger\cf0\i0\f4\fs24  \line\cf2\i\f2\fs16 and better idiot-proof programs, and the\cf0\i0\f4\fs24  \line\cf2\i\f2\fs16 Universe trying to produce bigger and better\cf0\i0\f4\fs24  \line\cf2\i\f2\fs16 idiots.\~\~ So far, the Universe is winning."\cf0\i0\f4\fs24  \line\cf2\i\f2\fs16\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~ -\~ Rich Cook\cf0\i0\f4\fs24  \par
+\f0\fs20\par
+}
+ 

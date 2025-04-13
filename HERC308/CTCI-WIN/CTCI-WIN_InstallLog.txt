@@ -1,0 +1,82 @@
+C:\herc307-64\CTCI-WIN
+C:\herc307-64\CTCI-WIN\CTCI-WIN_3.3.0.579_x64_std_setup.exe
+C:\herc307-64\CTCI-WIN\FishPack32.dll
+C:\herc307-64\CTCI-WIN\FishPack32U.dll
+C:\herc307-64\CTCI-WIN\TunTap32.dll
+C:\herc307-64\CTCI-WIN\TunTap32U.dll
+C:\herc307-64\CTCI-WIN\TT32Test.exe
+C:\herc307-64\CTCI-WIN\TT32TestU.exe
+C:\herc307-64\CTCI-WIN\FWPCUtil.exe
+C:\herc307-64\CTCI-WIN\FishPack64.dll
+C:\herc307-64\CTCI-WIN\FishPack64U.dll
+C:\herc307-64\CTCI-WIN\TunTap64.dll
+C:\herc307-64\CTCI-WIN\TunTap64U.dll
+C:\herc307-64\CTCI-WIN\TT64Test.exe
+C:\herc307-64\CTCI-WIN\TT64TestU.exe
+C:\herc307-64\CTCI-WIN\LICENSE.rtf
+C:\herc307-64\CTCI-WIN\README.rtf
+C:\herc307-64\CTCI-WIN\INSTALL.rtf
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\TT32Test.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\TT64Test.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Home.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Home.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Help.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Help.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN FAQ.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN FAQ.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Product directory.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\README.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\LICENSE.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\INSTALL NOTES.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Uninstall.lnk
+C:\herc307-64\CTCI-WIN
+C:\herc307-64\CTCI-WIN\CTCI-WIN_3.3.0.579_x86_std_setup.exe
+C:\herc307-64\CTCI-WIN\FishPack32.dll
+C:\herc307-64\CTCI-WIN\FishPack32U.dll
+C:\herc307-64\CTCI-WIN\TunTap32.dll
+C:\herc307-64\CTCI-WIN\TunTap32U.dll
+C:\herc307-64\CTCI-WIN\TT32Test.exe
+C:\herc307-64\CTCI-WIN\TT32TestU.exe
+C:\herc307-64\CTCI-WIN\FWPCUtil.exe
+C:\herc307-64\CTCI-WIN\LICENSE.rtf
+C:\herc307-64\CTCI-WIN\README.rtf
+C:\herc307-64\CTCI-WIN\INSTALL.rtf
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\TT32Test.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Home.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Home.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Help.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Help.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN FAQ.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN FAQ.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Product directory.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\README.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\LICENSE.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\INSTALL NOTES.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Uninstall.lnk
+C:\herc307-64\CTCI-WIN
+C:\herc307-64\CTCI-WIN\CTCI-WIN_3.3.0.579_x86_std_setup.exe
+C:\herc307-64\CTCI-WIN\FishPack32.dll
+C:\herc307-64\CTCI-WIN\FishPack32U.dll
+C:\herc307-64\CTCI-WIN\TunTap32.dll
+C:\herc307-64\CTCI-WIN\TunTap32U.dll
+C:\herc307-64\CTCI-WIN\TT32Test.exe
+C:\herc307-64\CTCI-WIN\TT32TestU.exe
+C:\herc307-64\CTCI-WIN\FWPCUtil.exe
+C:\herc307-64\CTCI-WIN\LICENSE.rtf
+C:\herc307-64\CTCI-WIN\README.rtf
+C:\herc307-64\CTCI-WIN\INSTALL.rtf
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\TT32Test.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Home.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Home.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN Help.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN Help.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\CTCI-WIN FAQ.lnk
+C:\herc307-64\CTCI-WIN\CTCI-WIN FAQ.url
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Product directory.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\README.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\LICENSE.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\INSTALL NOTES.lnk
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SoftDevLabs\CTCI-WIN\Uninstall.lnk
