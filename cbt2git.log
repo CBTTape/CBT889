@@ -1,9 +1,9 @@
-2025-04-13 23:49:29.648326 - Received CBT.V508.FILE889.PDS from FILE889.XMI 
-2025-04-13 23:49:29.649451 - Found $$$#DATE.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/$$$#DATE
-2025-04-13 23:49:29.649561 - Found @FILE889.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/@FILE889
-2025-04-13 23:49:29.764303 - Found HERC308.zip (application/zip) in CBT.V508.FILE889.PDS, moved to HERC308
-2025-04-13 23:49:29.803591 - Found H312W32.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H312W32
-2025-04-13 23:49:29.864234 - Found H312W64.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H312W64
-2025-04-13 23:49:29.938143 - Found H446ZIP.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H446ZIP
-2025-04-13 23:49:29.938312 - Found PROFCTC.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/PROFCTC
-2025-04-13 23:49:29.938389 - Found PROFLCS.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/PROFLCS
+2025-04-15 06:32:48.638734 - Received CBT.V508.FILE889.PDS from FILE889.XMI 
+2025-04-15 06:32:48.639773 - Found $$$#DATE.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/$$$#DATE
+2025-04-15 06:32:48.640033 - Found @FILE889.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/@FILE889
+2025-04-15 06:32:49.098177 - Found HERC308.zip (application/zip) in CBT.V508.FILE889.PDS, moved to HERC308
+2025-04-15 06:32:49.145790 - Found H312W32.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H312W32
+2025-04-15 06:32:49.194572 - Found H312W64.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H312W64
+2025-04-15 06:32:49.272885 - Found H446ZIP.zip (application/zip) in CBT.V508.FILE889.PDS, moved to H446ZIP
+2025-04-15 06:32:49.273194 - Found PROFCTC.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/PROFCTC
+2025-04-15 06:32:49.273309 - Found PROFLCS.txt (text/plain) in CBT.V508.FILE889.PDS, moved to PDS/PROFLCS
